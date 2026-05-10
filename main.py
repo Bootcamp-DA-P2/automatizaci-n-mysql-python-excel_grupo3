@@ -9,6 +9,5 @@ from sakila_ETL import test_connection
 from sakila_ETL import get_data_list_from_join
 
 if __name__ == "__main__":
-    conection_bd()
     test_connection()
     get_data_list_from_join()
