@@ -34,13 +34,16 @@ def get_data_list_from_join():
                     LOWER(c.email) AS email, LOWER(ci.city) AS city, LOWER(co.country) AS country,
                     r.rental_id, r.rental_date, r.return_date,
                     DATEDIFF(r.return_date, r.rental_date) AS rental_duration_days,
-                    p.payment_id, p.amount, p.payment_date
+                    p.payment_id, p.amount, p.payment_date,
+                    f.film_id
                 FROM customer c
+                JOIN rental r ON c.customer_id = r.customer_id
+                JOIN inventory i ON r.inventory_id = i.inventory_id
+                JOIN film f ON i.film_id = f.film_id
+                JOIN payment p ON r.rental_id = p.rental_id
                 JOIN address a ON c.address_id = a.address_id
                 JOIN city ci ON a.city_id = ci.city_id
                 JOIN country co ON ci.country_id = co.country_id
-                JOIN rental r ON c.customer_id = r.customer_id
-                JOIN payment p ON r.rental_id = p.rental_id
                 WHERE r.rental_id IS NOT NULL AND p.amount > 0 AND r.return_date IS NOT NULL;
             """
         },
@@ -48,6 +51,7 @@ def get_data_list_from_join():
             "name": "DataFrame2",
             "query": """
                 SELECT 
+                    f.film_id,
                     LOWER(TRIM(f.title)) AS title, 
                     LOWER(TRIM(c.name)) AS category, 
                     LOWER(TRIM(l.name)) AS language,
@@ -84,15 +88,15 @@ def get_data_list_from_join():
     try:
         with engine.connect() as connection:
             for query_info in queries:
-                result = connection.execute(text(query_info["query"]))
-                rows = result.fetchall()
+                print(f"⏳ Extrayendo {query_info['name']}...")
                 
-                # Crear DataFrame
-                df = pd.DataFrame(rows, columns=result.keys())
+                # pd.read_sql es mucho más rápido que fetchall() para volúmenes grandes
+                df = pd.read_sql(text(query_info["query"]), connection)
 
                 # Guardar CSV
                 file_path = os.path.join(DATA_DIR, f"{query_info['name']}.csv")
                 df.to_csv(file_path, index=False, encoding='utf-8')
+                
                 print(f"✅ {query_info['name']} guardado en: {file_path} | Registros: {len(df)}")
                 
     except Exception as e:
