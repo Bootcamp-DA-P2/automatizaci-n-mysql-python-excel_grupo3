@@ -1,4 +1,4 @@
-# 🎬 Análisis de Rentas y Películas (2005)
+# 🎬 Análisis de Dashboard
 
 ## 📝 Descripción del Proyecto
 Este repositorio contiene un tablero de control (dashboard) desarrollado en Excel mediante **Tablas Dinámicas**. El análisis se centra en el rendimiento de ingresos, preferencias de categorías y métricas operativas durante el periodo mayo-agosto de 2005.
@@ -38,7 +38,13 @@ Para mejorar la interpretación de estas tablas en un entorno BI, se recomienda:
 3. **Treemap:** Para visualizar la jerarquía de ingresos por categoría.
 
 ---
-> **Instrucciones:** Para actualizar los datos: 
-1. Primero se ejecuta ```bash python src/sakila_ETL.py```
-2. Abrimos la carpeta del proyecto **dashboard\Sakila_Dashboard.xlsx**
-3. Refrescar los datos con F5.
+## ⚙️ Instrucciones de Actualización
+Para actualizar los datos: 
+1. Primero se ejecuta 
+    ```bash 
+    python src/sakila_ETL.py
+    ```
+2. Abrir el archivo: 
+    **dashboard\Sakila_Dashboard.xlsx**
+3. Refrescar los datos:
+     desde Excel presionando ```F5``` o utilizando la opción **Actualizar Todo** en la pestaña **Datos**.
