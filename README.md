@@ -241,11 +241,11 @@ Este enfoque permitió mantener una dinámica de trabajo organizada, eficiente y
 
 ## 📊 Resultado Final
 El equipo consiguió desarrollar:
-✅ Un sistema ETL automatizado.
-✅ Integración entre SQL, Python y Excel.
-✅ Generación automática de archivos CSV.
-✅ Un dashboard dinámico con métricas y visualizaciones.
-✅ Un entorno organizado y documentado para futuras actualizaciones.
+- ✅ Un sistema ETL automatizado.
+- ✅ Integración entre SQL, Python y Excel.
+- ✅ Generación automática de archivos CSV.
+- ✅ Un dashboard dinámico con métricas y visualizaciones.
+- ✅ Un entorno organizado y documentado para futuras actualizaciones.
 
 ## 🚀 Conclusión
 La metodología utilizada permitió combinar organización, colaboración y flexibilidad durante el
