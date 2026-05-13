@@ -41,6 +41,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
+
 ---
 
 # 📁 Estructura del Proyecto
@@ -142,3 +143,111 @@ Esto hará:
 
 # 📊 Dashboard y Análisis Final
 El análisis final se centraliza en el archivo Sakila_dashboard.xlsx. Para comprender el funcionamiento de los filtros, segmentadores y métricas visualizadas, consulta la Guía del Dashboard[dashboard\README.md].
+
+---
+
+# 📖 Metodología Scrum Adaptada
+
+El equipo trabajó utilizando una metodología inspirada en Scrum, adaptada a un entorno académico y
+colaborativo.
+En lugar de reuniones diarias formales, el grupo se reunía cada vez que era necesario tomar decisiones
+importantes o resolver complicaciones técnicas. Cuando surgían errores o dificultades, el trabajo se
+realizaba de forma conjunta para encontrar soluciones y mantener el avance del proyecto.
+## ⚙️ Organización del Equipo
+
+👩 Rita Isabel Romero Ruiz
+**Product Owner · Gestión del Proyecto y Visualización**
+Responsable de:
+- Crear el repositorio del proyecto.
+- Tomar decisiones sobre tablas dinámicas y análisis visual.
+- Diseñar y crear las tablas dinámicas en Excel.
+- Participar en decisiones generales sobre la estructura del dashboard.
+- Colaborar en tareas conjuntas del proyecto.
+
+👨 Marco Ohimai Imouokhome
+**Desarrollo de Datos y Dashboard**
+Responsable de:
+- Limpieza y preparación de tablas.
+- Apoyo en la estructura y organización de datos.
+- Creación del dashboard final en Excel.
+- Participación en tareas técnicas compartidas.
+- Resolución colaborativa de incidencias.
+
+👩 Irene Condado Alcantarilla
+**Desarrollo ETL y Automatización**
+Responsable de:
+- Desarrollo del archivo principal `main.py`.
+- Automatización y ajustes en Python.
+- Transformación de datos mediante Pandas.
+- Generación de archivos CSV.
+- Preparación de datos para su integración en Excel.
+- Participación en mejoras y revisiones conjuntas.
+
+## 🤝 Trabajo Colaborativo
+Aunque cada integrante tenía responsabilidades principales, muchas partes del proyecto fuerondesarrolladas de forma conjunta.
+El equipo colaboró especialmente en:
+- Resolución de errores.
+- Organización del flujo ETL.
+- Ajustes del dashboard.
+- Validación de resultados.
+- Revisión de tablas y visualizaciones.
+- Toma de decisiones técnicas.
+- La comunicación constante y el apoyo mutuo permitieron avanzar de manera organizada y adaptarse alas necesidades de cada fase del proyecto.
+
+## 🔄 Flujo de Trabajo Aplicado
+
+1️⃣ Extracción de Datos
+- Consultas SQL sobre la base de datos Sakila.
+- Limpieza inicial de tablas.
+- Preparación de información para el procesamiento.
+
+---
+
+2️⃣ Transformación y Automatización
+- Procesamiento de datos mediante Python y Pandas.
+- Automatización del flujo ETL.
+- Generación automática de archivos CSV.
+- Preparación de datos para Excel.
+
+---
+
+3️⃣ Visualización y Análisis
+- Creación de tablas dinámicas.
+- Diseño del dashboard interactivo.
+- Implementación de KPIs y gráficos.
+- Organización visual de métricas y tendencias.
+
+---
+
+## 📋 Organización de Tareas
+
+| Área | Responsable Principal |
+|---|---|
+| Repositorio y decisiones visuales | Rita |
+| Limpieza de tablas y dashboard | Marco |
+| ETL, Python y CSV | Irene |
+| Resolución de problemas y mejoras | Trabajo conjunto |
+
+
+## 💡 Forma de Trabajo del Equipo
+El proyecto se desarrolló mediante:
+- Reuniones según necesidad.
+- Colaboración constante.
+- División flexible de tareas.
+- Resolución conjunta de complicaciones técnicas.
+- Participación colectiva en decisiones importantes.
+
+Este enfoque permitió mantener una dinámica de trabajo organizada, eficiente y adaptable.
+
+## 📊 Resultado Final
+El equipo consiguió desarrollar:
+✅ Un sistema ETL automatizado.
+✅ Integración entre SQL, Python y Excel.
+✅ Generación automática de archivos CSV.
+✅ Un dashboard dinámico con métricas y visualizaciones.
+✅ Un entorno organizado y documentado para futuras actualizaciones.
+
+## 🚀 Conclusión
+La metodología utilizada permitió combinar organización, colaboración y flexibilidad durante el
+desarrollo del proyecto.
+Gracias al trabajo conjunto y a la división equilibrada
