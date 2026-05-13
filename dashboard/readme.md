@@ -9,20 +9,24 @@ El análisis se divide en 6 áreas clave:
 
 ### 1. Tendencias Temporales
 *   **Línea de Tiempo de Ingresos:** Evolución mensual de la `Suma de amount`. Se identifica un crecimiento masivo de mayo a julio.
-*   **Promedio por Días:** Análisis del ticket promedio diario, manteniéndose estable cerca de los **$421.72**.
+![Línea de Tiempo de Ingresos](assets/LineaTiempoIngresos.PNG)
+*   **Promedio por día:** Análisis del ticket promedio diario, manteniéndose estable cerca de los **$421.72**.
 
 ### 2. Análisis de Contenido
 *   **Top 10 Películas:** Ranking por volumen de renta. Películas como *Apache Divine* y *Bucket Brotherhood* lideran el catálogo.
-*   **Ingresos por Categoría:** Distribución de ingresos por género (Action, Animation, Children, etc.). 
+![Top 10 Peliculas](assets/Top10Peliculas.PNG)
+*   **Ingresos por Género:** Distribución de ingresos por género (Action, Animation, Children, etc.). 
     *   *Sugerencia visual:* Usar gráfico circular o de dona.
+![Ingresos por Categoria](assets/IngresosporCategoria.PNG)
 
 ### 3. Operaciones y Talento
 *   **Clientes vs Rentas:** Relación entre el volumen de clientes y los ingresos generados.
+![Clientes vs Rentas](assets/top10Clientes.PNG)
 *   **Recuento por Títulos:** Inventario de frecuencia de rentas por película.
 *   **Recuento por Actores:** Identificación de los actores con mayor presencia en las películas rentadas (ej. Angela Witherspoon, Julia DeGeneres).
+![Recuento por Actores](assets/topActores.PNG)
 
 ## 📉 Métricas Principales (KPIs)
-
 
 | Métrica | Valor Total |
 | :--- | :--- |
@@ -30,6 +34,7 @@ El análisis se divide en 6 áreas clave:
 | **Promedio General de Renta** | $421.72 |
 | **Total de Registros de Películas** | 318 |
 | **Total de Actores Analizados** | 394 |
+![Métricas Principales (KPIs)](assets/KPIS.PNG)
 
 ## 🛠️ Visualizaciones Recomendadas
 Para mejorar la interpretación de estas tablas en un entorno BI, se recomienda:
